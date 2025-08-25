@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+h1 {
+    color: aqua;
+    font-size: 30px;
+}
+
+.botonera {
+    width: 1200px;
+    height: 90px;
+    background-color: red;
+}
+/* clase. puede estar en varias partes */
+
+#cabecera {
+    background-color: blue;
+    width: 1200px;
+    height: 400px;
+}
+/* ID. pueden estar una vez en el archivo. pensado para ser único */
+
+header p {
+    font-size: 10px
+}
+
+.textoppal p{
+    color: blue;
+}
