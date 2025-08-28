@@ -3,14 +3,12 @@
 
 <head><!-- info para navegador-->
     <meta charset="UTF-8" />
-    <title>TP de Juan Forte</title>
-    
-    <link href="styles.css"  rel="stylesheet" type="text/css">
-<!-- Esto para linkear con el css -->
+    <title>CV Juan Forte</title>
 
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <!-- Esto para linkear con el css -->
 
-
-<!-- <style type="text/css">
+    <!-- <style type="text/css">
     h1 {
         color: blue;
     } </style>                      
@@ -21,46 +19,145 @@
 <body><!-- sí se muestra en la página web -->
     <header id="cabecera">
         <!-- Este es el header -->
-        <img src="img/silueta-plantilla-logotipo-dinosaurio_207451-44.avif" alt="Logo de dinosaurio" width="55" height="55" /> <!-- se cierra con barrita en el mismo renglón -->
+        <div class="encabezado">
+            <div class="contenedorfoto">
+                <img src="img/20250607_144134 copia.jpg" alt="Foto de perfil" width="150px" />
+                <!-- se cierra con barrita en el mismo renglón -->
+            </div>
+            <div class="contenedorNombre">
+                <h1>JUAN MANUEL FORTE</h1>
+                <p>DISEÑADOR UX</p>
+            </div>
+        </div>
         <nav class="botonera">
             <a href="#">Inicio</a> <!-- El numeral es para que vuelva a la misma página -->
-            <a href="#">Mapa</a>
-            <a href="#">Entidades</a>
-            <a href="#">Info</a>
+            <a href="#">Experiencia Laboral</a>
+            <a href="#">Formación Académica</a>
+            <a href="#">Intereses</a>
         </nav>
-        <p> Esto es un párrafo en el header</p>
     </header>
     <main>
         <!-- Esta es mi primera página -->
         <section>
-            <h1>Título</h1> <!-- h1 se prioriza en las búsquedas de google -->
-            <h2>Subtítulo1</h2>
+            <h2 class="fondorojo">Datos personales</h2>
+            <!-- h1 se prioriza en las búsquedas de google. Si hay más de uno está MAL -->
+            <ul>
+                <li>Teléfono: 11-5820-7006</li>
+                <li>Email: juanma02forte@hotmail.com</li>
+                <li>Lanús, Buenos Aires, Argentina</li>
+                <li>38 años</li>
+            </ul>
         </section>
-        <aside>
+        <section>
+            <h2>Experiencia Laboral</h2>
+            <h3>Accenture</h3>
+            <p>17 años 8 meses</p>
+            <ul>
+                <li>
+                    <h4>UX Designer</h4>
+                    <p>Octubre 2023 - Presente</p>
+                    <p>Funciones y tareas: User Experience (UX) · Figma (Software) · User Interface Design · User
+                        Experience Design</p>
+                </li>
+
+                <li>
+                    <h4>Quality Assurance Lead</h4>
+                    <p>May 2020 - Oct 2024 · 4 yrs 6 mos</p>
+                    <p>Skills: Databases · Technical Documentation · Test Execution · Test Designing · Test Management ·
+                        Test Strategy · Software Testing · Manual Testing · Agile Methodologies · Test Methodologies ·
+                        Agile &
+                        Waterfall Methodologies</p>
+                </li>
+
+                <li>
+                    <h4>Analista de Sistemas</h4>
+                </li>
+                <p>2011 - May 2020 · 9 yrs 5 mos</p>
+                <p>Skills: Databases · Technical Documentation · Test Execution · Test Designing · Test Management ·
+                    Test
+                    Strategy · Software Testing · Manual Testing · Test Methodologies · Agile & Waterfall Methodologies
+                </p>
+                </li>
+
+                <li>
+                    <h4>Asistente</h4>
+                    <p>2008 - 2011 · 3 yrs</p>
+                    <p>Skills: Databases</p>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>Formación Académica</h2>
+            <ul>
+                <li>
+                    <h3>Universidad Nacional de Lanús</h3>
+                    <p>Licenciatura en Diseño y Comunicación visual</p>
+                    <p>2021 - En curso</p>
+                </li>
+                <li>
+                    <h3>Escuela de Educación Técnica N°5 de Lanús, "John F. Kennedy"</h3>
+                    <p>Técnico en Informática Personal y Profesional</p>
+                    <p>2000 - 2004</p>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>Cursos y Certificaciones</h2>
+            <ul>
+                <li>
+                    <h3>Curso de Bonsai</h3>
+                    <p>2016</p>
+                </li>
+                <li>
+                    <h3>Curso de Dirigente Deportivo</h3>
+                    <p>2016</p>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>Intereses</h2>
+            <ul>
+                <li>Bajista en
+                    <a
+                        href="https://open.spotify.com/intl-es/album/5ESB9k8uZIxvv5B5M7W0Kl?si=IFUT2nIWQieeMrjZMBl7iA">Gobi</a>
+                </li>
+                <li>Fanático de los gatos</li>
+                <li>Me gustan los dinosaurios</li>
+                <li>Maradoneano antes que nada</li>
+            </ul>
+        </section>
+        <!-- <aside>
             <p>Esto es un párrafo</p>
-        </aside>
-        <article>
-            <h3>Subtítulo3</h3>
-            <p>El Giganotosaurio fue uno de los depredadores terrestres más grandes que existieron en la historia de la Tierra. Vivió hace aproximadamente 97 millones de años, durante el período Cretácico, en lo que hoy es la región de la Patagonia argentina. Su nombre significa “lagarto gigante del sur”, y no es casual: podía superar los 12 metros de longitud y se estima que pesaba entre 6 y 8 toneladas. Pertenecía al grupo de los carcarodontosáuridos, un linaje de terópodos carnívoros que rivalizaban en tamaño con el famoso Tyrannosaurus rex, aunque estaban separados por millones de años y continentes diferentes. Su cráneo, alargado y robusto, estaba provisto de dientes serrados diseñados para desgarrar grandes presas, probablemente dinosaurios herbívoros gigantes como los titanosaurios. El hallazgo del Giganotosaurio en Argentina en 1993 significó un hito para la paleontología, ya que no solo reveló la magnitud de los depredadores sudamericanos, sino también la diversidad de ecosistemas que poblaron el hemisferio sur durante el Cretácico.</p>
-            <img src="img/Giganotosaurus_dominion_render_2.webp" alt="giagonoto" width="200"/>
+        </aside> -->
+        <!-- <aside>
+            <h3>Datos personales</h3>
             <div class="textoppal">
-                <p>Dinosaurio:</p>
+                <p>Teléfono: 11-5820-7006</p>
+                <p>Email: juanma02forte@hotmail.com</p>
+                <p>Lanús, Buenos Aires, Argentina</p>
+                <p>38 años</p>
             </div>
-        </article>
+        </aside> -->
     </main>
     <footer>
         <!-- Este es el footer -->
-         <p>Cátedra Wischñevsky 2025</p>
-         <ul>
+        <p>Cátedra Wischñevsky 2025</p>
+        <ul>
             <li>
-                <a href="https://www.instagram.com/dinosaurioba/">Instragram</a>
+                <a href="https://www.linkedin.com/in/juanmanuelforte/">Linkedin</a>
             </li>
             <li>
-                <img src="img/facebook.webp" width="50"/> 
-                Facebook
+                <a
+                    href="https://open.spotify.com/intl-es/album/5ESB9k8uZIxvv5B5M7W0Kl?si=IFUT2nIWQieeMrjZMBl7iA">Spotify</a>
             </li>
-            <li>Tiktok</li>
-         </ul>
+            <li>
+                <a href="https://www.instagram.com/juanma02forte">Instragram</a>
+            </li>
+            <li>
+                <img src="img/facebook.webp" width="50" />
+                <a href="https://www.facebook.com/diegomaradona">Facebook</a>
+            </li>
+        </ul>
     </footer>
 </body>
 

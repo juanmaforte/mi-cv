@@ -28,12 +28,9 @@
 font-family: "Public Sans", sans-serif;
 }
 
-body {
-}
-
 /*Acá empiezan las aplicaciones*/
 
-h1,h4 {
+/* h1, h4 {
     font-family: 'WorkSans Regular', 'Courier New', Courier, sans-serif;
 }
 
@@ -43,30 +40,57 @@ h2 {
 
 h3 {
     font-family: 'WorkSans Italic', 'Courier New', Courier, sans-serif;
-}
+} */
 /* h1 {
     color: aqua;
     font-size: 30px;
 }
  */
-.botonera {
-    width: 1200px;
-    height: 90px;
-    background-color: yellow;
+
+.encabezado {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
 }
-/* clase. puede estar en varias partes */
+
+.botonera {
+    /* width: 1200px; */
+    /* height: 90px; */
+    /* background-color: yellow; */
+}
+/* Para cada class. puede estar en VARIAS partes */
+
+/* .fondorojo {
+    background-color: red;
+} */
 
 #cabecera {
-    background-color: blue;
-    width: 1200px;
-    height: 400px;
+    /* background-color: blue; */
+    /* width: 1200px; */
+    height: 250px;
 }
-/* ID. pueden estar una vez en el archivo. pensado para ser único */
+/* ID. pueden estar UNA VEZ en el archivo. pensado para ser único */
 
 header p {
     font-size: 10px
 }
 
+body {
+    background-color: #1a1a1a;
+    color: rgb(231, 228, 222);
+}
+
+main {
+    background-color: rgb(231, 228, 222);
+    color: #1a1a1a;
+}
+
+ul, li {
+    margin: 0;
+}
+
 .textoppal p{
-    color: blue;
+    /* color: blue; */
 }
