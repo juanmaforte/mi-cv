@@ -47,18 +47,54 @@ h3 {
 }
  */
 
+
 .encabezado {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
-    align-content: center;
+    justify-content: center;
+    align-content: space-around;
     align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.contenedorNombre {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-content: space-between;
+    align-items: flex-end;
+}
+
+.contenedorfoto {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-content: flex-start;
+}
+
+.mifoto {
+    width: 200px;
+    /* tamaño de la imagen */
+    height: 200px;
+    /* cuadrada */
+    border-radius: 50%;
+    /* la hace circular */
+    border: 5px solid #ffbb00;
+    /* el "marco" */
+    object-fit: cover;
+    /* asegura que la imagen no se deforme */
 }
 
 .botonera {
-    /* width: 1200px; */
-    /* height: 90px; */
-    /* background-color: yellow; */
+    color:antiquewhite;
+    text-decoration: none;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 /* Para cada class. puede estar en VARIAS partes */
 
@@ -66,15 +102,15 @@ h3 {
     background-color: red;
 } */
 
-#cabecera {
+/* #cabecera {
     /* background-color: blue; */
     /* width: 1200px; */
-    height: 250px;
-}
+    /* height: 250px;
+} */ 
 /* ID. pueden estar UNA VEZ en el archivo. pensado para ser único */
 
 header p {
-    font-size: 10px
+    font-size: 12px;
 }
 
 body {
@@ -85,11 +121,37 @@ body {
 main {
     background-color: rgb(231, 228, 222);
     color: #1a1a1a;
+    display: flex;           /* activa flexbox */
+    gap: 20px;               /* espacio entre secciones */
 }
 
-ul, li {
-    margin: 0;
+.izquierda { flex: 1; }  /* ocupa el doble */
+.derecha { flex: 2; }
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
 }
+
+
+nav li {
+    flex: 1;
+    /* opcional: cada li ocupa el mismo ancho */
+    text-align: center;
+    /* centra el texto en cada item */
+}
+
+nav a {
+    justify-content: space-between;
+    /* reparte los elementos en todo el ancho */
+    padding: 0;
+    /* quita el padding del ul */
+    margin: 0;
+    /* quita el margin del ul */
+    color: antiquewhite;
+    text-decoration: none;
+}
+
 
 .textoppal p{
     /* color: blue; */
