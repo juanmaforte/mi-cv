@@ -2,7 +2,10 @@
 
 /*configuraciones generales*/
 
+/* agregar min-widt max width */
+/* text-wrap: pretty;   elimina viudas y huérfanas  */
 
+/* 
 @font-face {
     font-family: "WorkSans Regular";
     src: url(fonts/WorkSans-Medium.ttf) format(truetype);
@@ -22,15 +25,19 @@
     src: url(fonts/WorkSans-Italic-VariableFont_wght.ttf) format(truetype);
     font-weight: normal;
     font-style: italic;
-}
+} */
 
 * {
-font-family: "Public Sans", sans-serif;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 12pt;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
+/* selector universal */
+
 /*Acá empiezan las aplicaciones*/
-
-
 .encabezado {
     display: flex;
     flex-direction: row-reverse;
@@ -39,6 +46,7 @@ font-family: "Public Sans", sans-serif;
     align-items: center;
     gap: 20px;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .contenedorNombre {
@@ -70,7 +78,7 @@ font-family: "Public Sans", sans-serif;
 }
 
 .botonera {
-    color:antiquewhite;
+    color: antiquewhite;
     text-decoration: none;
     display: flex;
     align-content: center;
@@ -78,51 +86,6 @@ font-family: "Public Sans", sans-serif;
     align-items: center;
     margin-top: 00px;
     margin-bottom: 20px;
-}
-/* Para cada class. puede estar en VARIAS partes */
-
-/* .fondorojo {
-    background-color: red;
-} */
-
-/* #cabecera {
-    /* background-color: blue; */
-    /* width: 1200px; */
-    /* height: 250px;
-} */ 
-/* ID. pueden estar UNA VEZ en el archivo. pensado para ser único */
-
-header p {
-    font-size: 18px;
-    margin-top: 5px;
-}
-
-body {
-    background-color: #1a1a1a;
-    color: rgb(231, 228, 222);
-}
-
-main {
-    background-color: rgb(231, 228, 222);
-    color: #1a1a1a;
-    display: flex;           /* activa flexbox */
-    gap: 20px;               /* espacio entre secciones */
-}
-
-.izquierda { flex: 1; }  /* ocupa el doble */
-
-.derecha { flex: 2; }
-
-.fechas {
-    font-style: italic;
-    font-size: 10;
-    margin-top: 0;
-    margin-bottom: 5px;
-}
-
-ul {
-    list-style-type: none;
-    padding-left: 0;
 }
 
 
@@ -147,9 +110,150 @@ nav a {
 h1 {
     font-size: 60px;
     margin-bottom: 0px;
-
 }
 
-.textoppal p{
-    /* color: blue; */
+h2 {
+    display: flex;
+    font-family: "Merriweather", serif;
+    font-size: 24px;
+    background-color: #ffbb00;
+    padding: 10px;
+    margin-bottom: 0px;
+    margin-top: 25px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 0px;
+    margin-top: 15px;
+}
+
+h4 {
+    font-size: 16px;
+    margin-bottom: 0px;
+    margin-top: 15px;
+}
+
+/* Para cada class. puede estar en VARIAS partes */
+
+/* #cabecera {
+    background-color: blue;
+    width: 1200px;
+    height: 250px;
+} */
+/* ID. pueden estar UNA VEZ en el archivo. pensado para ser único */
+
+body {
+    background-color: #1a1a1a;
+    color: rgb(231, 228, 222);
+}
+
+header p {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+main {
+    background-color: rgb(231, 228, 222);
+    color: #1a1a1a;
+    display: flex;
+    /* activa flexbox */
+    gap: 80px;
+    /* espacio entre secciones */
+    padding-bottom: 30px;
+}
+
+footer {
+    display: flex;
+    font-size: 18px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+footer a {
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+.fechas {
+    font-style: italic;
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.izquierda {
+    flex: 1;
+    min-width: 300px;
+}
+
+.derecha {
+    flex: 2;
+    /* ocupa el doble */
+    min-width: 600px;
+}
+
+.divDerecha {
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    max-width: 800px;
+}
+
+.liExpe {
+    list-style-type: circle;
+    margin-left: 40px;
+}
+
+.liForma {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+.ulIzq {
+    display: flex;
+    padding-top: 12px;
+    padding-bottom: 3px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.liIzq {
+    list-style-type: square;
+    margin-left: 20px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.gobilink {
+    color: black;
+    font-weight: 400;
+    font-style: italic;
+    text-decoration: none;
 }

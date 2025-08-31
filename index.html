@@ -4,29 +4,26 @@
 <head><!-- info para navegador-->
     <meta charset="UTF-8" />
     <title>CV Juan Forte</title>
-
+    <!--  <link rel="icon" type="image/svg+html" href="" -->
     <link href="styles.css" rel="stylesheet" type="text/css">
     <!-- Esto para linkear con el css -->
-
-    <!-- <style type="text/css">
-    h1 {
-        color: blue;
-    } </style>                      
-    Esto es por si queremos un estilo sin la hoja de estilos  -->
-
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wdth,wght@0,18..144,87..112,300..900;1,18..144,87..112,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+    </style>
 </head>
 
 <body><!-- sí se muestra en la página web -->
     <header id="cabecera">
         <!-- Este es el header -->
-        <div class="encabezado">
+        <div class="encabezado"> <!-- div es la ÚLTIMA alternativa cuando tenemos que dividir algo -->
             <div class="contenedorfoto">
-                <img src="img/20250607_144134 copia.jpg" alt="Foto de perfil" class="mifoto" />
+                <img src="img/foto_perfil.jpg" alt="Foto de perfil" class="mifoto" />
                 <!-- se cierra con barrita en el mismo renglón -->
             </div>
             <div class="contenedorNombre">
                 <h1>JUAN MANUEL FORTE</h1>
-                <p>QA LEAD&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;ANALISTA DE SISTEMAS&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;DISEÑADOR UX</p>
+                <p>QA LEAD&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;ANALISTA DE
+                    SISTEMAS&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;DISEÑADOR UX</p>
             </div>
         </div>
         <nav class="botonera">
@@ -39,106 +36,118 @@
     <main>
         <!-- Esta es mi primera página -->
         <section class="izquierda">
-            <h2 class="fondorojo">Datos personales</h2>
+            <h2>Datos personales</h2>
             <!-- h1 se prioriza en las búsquedas de google. Si hay más de uno está MAL -->
             <section>
-                <ul>
-                    <li>Teléfono: 11-5820-7006</li>
-                    <li>Email: juanma02forte@hotmail.com</li>
-                    <li>Lanús, Buenos Aires, Argentina</li>
-                    <li>38 años</li>
+                <ul class="ulIzq">
+                    <li class="liIzq">Teléfono: 11-5820-7006</li>
+                    <li class="liIzq">Email: juanma02forte@hotmail.com</li>
+                    <li class="liIzq">Lanús, Buenos Aires, Argentina</li>
+                    <li class="liIzq">38 años</li>
                 </ul>
             </section>
+
             <section>
-                <h2>Cursos y Certificaciones</h2>
-                <ul>
-                    <li>
-                        <p>2011 - Taller de Quesos y Vinos</p>
-                        <p>Escuela Argentina de Sommeliers - CABA</p>
-                    </li>
-                    <li>
-                        <p>2018 - Curso de Bonsai</p>
-                        <p>El Centro del Bonsai - Esteban Echeverría</p>
-                    </li>
-                    <li>
-                        <p>2020 - Taller de Formación de Dirigentes Deportivos</p>
-                        <p>Club Atlético Boca Juniors - Brandsen 805 - CABA</p>
-                    </li>
-                </ul>
-            </section>
-            <section>
-                <h2>Intereses</h2>
-                <ul>
-                    <li>Bajista en
-                        <a
+                <h2>Otros Intereses</h2>
+                <ul class="ulIzq">
+                    <li class="liIzq">Bajista en
+                        <a class="gobilink"
                             href="https://open.spotify.com/intl-es/album/5ESB9k8uZIxvv5B5M7W0Kl?si=IFUT2nIWQieeMrjZMBl7iA">Gobi</a>
                     </li>
-                    <li>Fanático de los gatos</li>
-                    <li>Me gustan los dinosaurios</li>
-                    <li>Maradoneano antes que nada</li>
+                    <li class="liIzq">Fanático de los gatos</li>
+                    <li class="liIzq">Me gustan los dinosaurios</li>
+                    <li class="liIzq">Maradoneano antes que nada</li>
                 </ul>
             </section>
         </section>
         <section class="derecha">
             <section>
                 <h2>Experiencia Laboral</h2>
-                <h3>Accenture SRL · 17 años 8 meses</h3>
-                <ul>
-                    <li>
-                        <h4>UX Designer</h4>
-                        <p class="fechas">Octubre 2023 - Presente</p>
-                        <p>Funciones y tareas: User Experience (UX) · Figma (Software) · User Interface Design · User
-                            Experience Design</p>
-                    </li>
+                <div class="divDerecha">
+                    <h3>Accenture SRL · 17 años 8 meses</h3>
+                    <ul>
+                        <li class="liExpe">
+                            <h4>UX Designer</h4>
+                            <p class="fechas">Octubre 2023 - Presente</p>
+                            <p>Funciones y tareas: User Experience (UX) · Figma (Software) · User Interface Design ·
+                                User
+                                Experience Design</p>
+                        </li>
+                        <li class="liExpe">
+                            <h4>Quality Assurance Lead</h4>
+                            <p class="fechas">Mayo 2020 - Octubre 2023</p>
+                            <p>Funciones y tareas: Databases · Technical Documentation · Test Execution · Test Designing
+                                ·
+                                Test
+                                Management ·
+                                Test Strategy · Software Testing · Manual Testing · Agile Methodologies · Test
+                                Methodologies
+                                ·
+                                Agile & Waterfall Methodologies</p>
+                        </li>
+                        <li class="liExpe">
+                            <h4>Analista de Sistemas</h4>
+                            <p class="fechas">Septiembre 2011 - Mayo 2020</p>
+                            <p>Funciones y tareas: Databases · Technical Documentation · COBOL-CICS programming · C#
+                                Language ·
+                                Test
+                                Execution ·
+                                Test Designing · Test Management ·
+                                Test Strategy · Software Testing · Manual Testing · Test Methodologies · Agile &
+                                Waterfall
+                                Methodologies
+                            </p>
+                        </li>
 
-                    <li>
-                        <h4>Quality Assurance Lead</h4>
-                        <p class="fechas">Mayo 2020 - Octubre 2023</p>
-                        <p>Funciones y tareas: Databases · Technical Documentation · Test Execution · Test Designing · Test
-                            Management ·
-                            Test Strategy · Software Testing · Manual Testing · Agile Methodologies · Test Methodologies
-                            ·
-                            Agile & Waterfall Methodologies</p>
-                    </li>
-
-                    <li>
-                        <h4>Analista de Sistemas</h4>
-                    </li>
-                    <p class="fechas">Septiembre 2011 - Mayo 2020</p>
-                    <p>Funciones y tareas: Databases · Technical Documentation · COBOL-CICS programming · C# Language · Test
-                        Execution ·
-                        Test Designing · Test Management ·
-                        Test Strategy · Software Testing · Manual Testing · Test Methodologies · Agile & Waterfall
-                        Methodologies
-                    </p>
-                    </li>
-
-                    <li>
-                        <h4>Asistente de Sistemas</h4>
-                        <p class="fechas">Octubre 2007 - Agosto 2011</p>
-                        <p>Funciones y tareas: SQL Databases · Visual Basic programming · Technical Documentation</p>
-                    </li>
-                </ul>
+                        <li class="liExpe">
+                            <h4>Asistente de Sistemas</h4>
+                            <p class="fechas">Octubre 2007 - Agosto 2011</p>
+                            <p>Funciones y tareas: SQL Databases · Visual Basic programming · Technical Documentation
+                            </p>
+                        </li>
+                    </ul>
+                </div>
             </section>
             <section>
                 <h2>Formación Académica</h2>
-                <ul>
-                    <li>
-                        <h3>Universidad Nacional de Lanús</h3>
-                        <p>Licenciatura en Diseño y Comunicación visual</p>
-                        <p class="fechas">2021 - En curso</p>
-                    </li>
-                    <li>
-                        <h3>Universidad Tecnológica Nacional</h3>
-                        <p>Ingeniería en Sistemas de la Información</p>
-                        <p class="fechas">2005 - 2012 (incompleto)</p>
-                    </li>
-                    <li>
-                        <h3>Escuela de Educación Técnica N°5 de Lanús, "John F. Kennedy"</h3>
-                        <p>Técnico en Informática Personal y Profesional</p>
-                        <p class="fechas">2000 - 2004</p>
-                    </li>
-                </ul>
+                <div class="divDerecha">
+                    <ul>
+                        <li class="liForma">
+                            <h3>Universidad Nacional de Lanús</h3>
+                            <p>Licenciatura en Diseño y Comunicación visual</p>
+                            <p class="fechas">2021 - En curso</p>
+                        </li>
+                        <li class="liForma">
+                            <h3>Universidad Tecnológica Nacional</h3>
+                            <p>Ingeniería en Sistemas de la Información</p>
+                            <p class="fechas">2005 - 2012 (incompleto)</p>
+                        </li>
+                        <li class="liForma">
+                            <h3>E.E.T. N°5 de Lanús, "John F. Kennedy"</h3>
+                            <p>Técnico en Informática Personal y Profesional</p>
+                            <p class="fechas">2000 - 2004</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <h2>Cursos y Certificaciones</h2>
+                <div class="divDerecha">
+                    <ul>
+                        <li class="liForma">
+                            <h4>2011 - Taller de Quesos y Vinos</h4>
+                            <p>Escuela Argentina de Sommeliers - CABA</p>
+                        </li>
+                        <li class="liForma">
+                            <h4>2018 - Curso de Bonsai</h4>
+                            <p>El Centro del Bonsai - Esteban Echeverría</p>
+                        </li>
+                        <li class="liForma">
+                            <h4>2020 - Taller de Formación de Dirigentes Deportivos</h4>
+                            <p>Club Atlético Boca Juniors - Brandsen 805 - CABA</p>
+                        </li>
+                    </ul>
+                </div>
             </section>
 
         </section>
@@ -157,23 +166,25 @@
     </main>
     <footer>
         <!-- Este es el footer -->
-        <p>Cátedra Wischñevsky 2025</p>
-        <ul>
-            <li>
-                <a href="https://www.linkedin.com/in/juanmanuelforte/">Linkedin</a>
-            </li>
-            <li>
-                <a
-                    href="https://open.spotify.com/intl-es/album/5ESB9k8uZIxvv5B5M7W0Kl?si=IFUT2nIWQieeMrjZMBl7iA">Spotify</a>
-            </li>
-            <li>
-                <a href="https://www.instagram.com/juanma02forte">Instragram</a>
-            </li>
-            <li>
-                <img src="img/facebook.webp" width="50" />
-                <a href="https://www.facebook.com/diegomaradona">Facebook</a>
-            </li>
-        </ul>
+
+        <div>
+            <img src="img/linkedin_logo.png" width="25" />
+            <a href="https://www.linkedin.com/in/juanmanuelforte/">Linkedin</a>
+        </div>
+        <div>
+            <img src="img/spotify_logo.png" width="25" />
+            <a
+                href="https://open.spotify.com/intl-es/album/5ESB9k8uZIxvv5B5M7W0Kl?si=IFUT2nIWQieeMrjZMBl7iA">Spotify</a>
+        </div>
+        <div>
+            <img src="img/instagram_logo.png" width="25" />
+            <a href="https://www.instagram.com/juanma02forte">Instragram</a>
+        </div>
+        <div>
+            <img src="img/facebook_logo.png" width="25" />
+            <a href="https://www.facebook.com/diegomaradona">Facebook</a>
+        </div>
+
     </footer>
 </body>
 
