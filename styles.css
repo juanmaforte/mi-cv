@@ -125,6 +125,7 @@ h2 {
     align-content: center;
     justify-content: center;
     align-items: center;
+    border-radius: 12px;
 }
 
 h3 {
@@ -210,7 +211,7 @@ ul {
 
 .izquierda {
     flex: 1;
-    min-width: 300px;
+    min-width: 320px;
 }
 
 .derecha {
@@ -236,19 +237,51 @@ ul {
     margin-left: 20px;
 }
 
-.ulIzq {
+.ul-interes {
+    display: flex;
+    width: 240px;
+    padding-top: 12px;
+    padding-bottom: 3px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.div-datos{
+    display: flex;
+    justify-content: center;
+}
+
+.div-interes{
+    display: flex;
+    justify-content: center;
+}
+
+.ul-datos {
     display: flex;
     padding-top: 12px;
     padding-bottom: 3px;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 }
 
-.liIzq {
+.li-datos {
+    display: flex;
+    list-style-type: none;
+    margin-left: 20px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.li-interes {
+    
     list-style-type: square;
     margin-left: 20px;
     padding-top: 3px;
     padding-bottom: 3px;
+    gap: 15px;
 }
 
 .gobilink {
