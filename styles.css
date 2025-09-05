@@ -1,9 +1,15 @@
 @charset "utf-8";
 
 /*configuraciones generales*/
-
+/* agregar el width, heigh, alt para las imagenes */
 /* agregar min-widt max width */
+/* agregar favicon */
 /* text-wrap: pretty;   elimina viudas y huérfanas  */
+/* minheight: calc(100vh - alto footer) */
+/* reemplazar los div por articles */
+/* sacar el div del contenedor foto */
+/* usar rem para tipo  1 es tamaño de lectura*/
+/* usar text-wrap balance o preety o stable */
 
 /* 
 @font-face {
