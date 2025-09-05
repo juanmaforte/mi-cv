@@ -1,11 +1,5 @@
 @charset "utf-8";
 
-/* agregar min-widt max width */
-/* minheight: calc(100vh - alto footer) */
-/* usar rem para tipo  1 es tamaño de lectura*/
-/* usar text-wrap balance o preety o stable */
-
-
 * {
     font-family: "Ubuntu", sans-serif;
     box-sizing: border-box;
@@ -15,6 +9,13 @@
 body {
     background-color: #1a1a1a;
     color: rgb(231, 228, 222);
+    font-size: 1rem;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .encabezado {
@@ -40,6 +41,14 @@ body {
     display: flex;
     flex-direction: row;
     gap: 20px;
+    height: 17px;
+}
+
+.licentral {
+    border-left: 2px solid rgb(231, 228, 222);
+    border-right: 2px solid rgb(231, 228, 222);
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .mifoto {
@@ -50,11 +59,12 @@ body {
     object-fit: cover;
 }
 
-.botonera {
+nav {
     display: flex;
     justify-content: space-around;
-    align-items: center;
     margin-bottom: 20px;
+    width: 100%;
+    max-width: 1525px;
 }
 
 nav a {
@@ -63,8 +73,7 @@ nav a {
 }
 
 h1 {
-    font-size: 60px;
-    margin-bottom: 0px;
+    font-size: 3.5rem;
 }
 
 h2 {
@@ -78,7 +87,7 @@ h2 {
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 1.3rem;
     margin-top: 15px;
 }
 
@@ -90,33 +99,14 @@ main {
     background-color: rgb(231, 228, 222);
     color: #1a1a1a;
     display: flex;
-    gap: 80px;
     padding-bottom: 30px;
-}
-
-footer {
-    display: flex;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    flex-wrap: wrap;
+    gap: 100px;
     justify-content: center;
-    gap: 20px;
-}
-
-footer div {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
-footer a {
-    color: antiquewhite;
-    text-decoration: none;
 }
 
 .fechas {
     font-style: italic;
-    font-size: 14px;
+    font-size: 0.9rem;
 }
 
 ul {
@@ -127,12 +117,15 @@ ul {
 .izquierda {
     flex: 1;
     min-width: 320px;
+    max-width: 385px;
 }
 
 .derecha {
     flex: 2;
     min-width: 600px;
+    max-width: 775px;
     background-color: rgb(231, 228, 222);
+    text-wrap: balance;
 }
 
 .art-derecha {
@@ -140,6 +133,7 @@ ul {
     flex-direction: column;
     max-width: 800px;
     padding-left: 30px;
+    line-height: 1.3rem;
 }
 
 .ul-interes {
@@ -189,5 +183,30 @@ ul {
     color: black;
     font-weight: 400;
     font-style: italic;
+    text-decoration: none;
+}
+
+footer {
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer ul {
+    display: flex;
+    gap: 20px;
+}
+
+footer li {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+footer a {
+    color: antiquewhite;
     text-decoration: none;
 }
