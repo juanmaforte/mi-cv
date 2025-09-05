@@ -1,49 +1,23 @@
 @charset "utf-8";
 
-/*configuraciones generales*/
 /* agregar el width, heigh, alt para las imagenes */
 /* agregar min-widt max width */
-/* agregar favicon */
-/* text-wrap: pretty;   elimina viudas y huérfanas  */
 /* minheight: calc(100vh - alto footer) */
-/* reemplazar los div por articles */
-/* sacar el div del contenedor foto */
 /* usar rem para tipo  1 es tamaño de lectura*/
 /* usar text-wrap balance o preety o stable */
 
-/* 
-@font-face {
-    font-family: "WorkSans Regular";
-    src: url(fonts/WorkSans-Medium.ttf) format(truetype);
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "WorkSans Bold";
-    src: url(fonts/WorkSans-Bold.ttf) format(truetype);
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "WorkSans Italic";
-    src: url(fonts/WorkSans-Italic-VariableFont_wght.ttf) format(truetype);
-    font-weight: normal;
-    font-style: italic;
-} */
 
 * {
     font-family: "Ubuntu", sans-serif;
-    font-size: 12pt;
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
 }
 
-/* selector universal */
+body {
+    background-color: #1a1a1a;
+    color: rgb(231, 228, 222);
+}
 
-/*Acá empiezan las aplicaciones*/
 .encabezado {
     display: flex;
     flex-direction: row-reverse;
@@ -63,52 +37,28 @@
     align-items: flex-end;
 }
 
-.contenedorfoto {
+.bajada {
     display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    align-content: flex-start;
+    flex-direction: row;
+    gap: 20px;
 }
 
 .mifoto {
     width: 200px;
-    /* tamaño de la imagen */
     height: 200px;
-    /* cuadrada */
     border-radius: 50%;
-    /* la hace circular */
     border: 5px solid #ffbb00;
-    /* el "marco" */
     object-fit: cover;
-    /* asegura que la imagen no se deforme */
 }
 
 .botonera {
-    color: antiquewhite;
-    text-decoration: none;
     display: flex;
-    align-content: center;
     justify-content: space-around;
     align-items: center;
-    margin-top: 00px;
     margin-bottom: 20px;
 }
 
-
-nav li {
-    flex: 1;
-    /* opcional: cada li ocupa el mismo ancho */
-    text-align: center;
-    /* centra el texto en cada item */
-}
-
 nav a {
-    justify-content: space-between;
-    /* reparte los elementos en todo el ancho */
-    padding: 0;
-    /* quita el padding del ul */
-    margin: 0;
-    /* quita el margin del ul */
     color: #ffbb00;
     text-decoration: none;
 }
@@ -121,80 +71,42 @@ h1 {
 h2 {
     display: flex;
     font-family: "Merriweather", serif;
-    font-size: 24px;
     background-color: #ffbb00;
     padding: 10px;
-    margin-bottom: 0px;
     margin-top: 25px;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: center;
     justify-content: center;
-    align-items: center;
     border-radius: 12px;
 }
 
 h3 {
     font-size: 20px;
-    margin-bottom: 0px;
     margin-top: 15px;
 }
 
 h4 {
-    font-size: 16px;
-    margin-bottom: 0px;
     margin-top: 15px;
-}
-
-/* Para cada class. puede estar en VARIAS partes */
-
-/* #cabecera {
-    background-color: blue;
-    width: 1200px;
-    height: 250px;
-} */
-/* ID. pueden estar UNA VEZ en el archivo. pensado para ser único */
-
-body {
-    background-color: #1a1a1a;
-    color: rgb(231, 228, 222);
-}
-
-header p {
-    font-size: 18px;
-    margin-top: 5px;
 }
 
 main {
     background-color: rgb(231, 228, 222);
     color: #1a1a1a;
     display: flex;
-    /* activa flexbox */
     gap: 80px;
-    /* espacio entre secciones */
     padding-bottom: 30px;
 }
 
 footer {
     display: flex;
-    font-size: 18px;
     padding-top: 15px;
     padding-bottom: 15px;
-    flex-direction: row;
     flex-wrap: wrap;
-    align-content: center;
-    align-items: center;
     justify-content: center;
     gap: 20px;
 }
 
 footer div {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
     align-items: center;
-    justify-content: center;
     gap: 5px;
 }
 
@@ -206,8 +118,6 @@ footer a {
 .fechas {
     font-style: italic;
     font-size: 14px;
-    margin-top: 0;
-    margin-bottom: 0;
 }
 
 ul {
@@ -222,43 +132,30 @@ ul {
 
 .derecha {
     flex: 2;
-    /* ocupa el doble */
     min-width: 600px;
     background-color: rgb(231, 228, 222);
 }
 
-.divDerecha {
+.art-derecha {
     display: flex;
     flex-direction: column;
-    display: flex;
     max-width: 800px;
-}
-
-.liExpe {
-    list-style-type: circle;
-    margin-left: 40px;
-}
-
-.liForma {
-    list-style-type: square;
-    margin-left: 20px;
+    padding-left: 30px;
 }
 
 .ul-interes {
     display: flex;
     width: 240px;
     padding-top: 12px;
-    padding-bottom: 3px;
     flex-direction: column;
-    align-items: flex-start;
 }
 
-.div-datos{
+.art-datos {
     display: flex;
     justify-content: center;
 }
 
-.div-interes{
+.art-interes {
     display: flex;
     justify-content: center;
 }
@@ -268,22 +165,20 @@ ul {
     padding-top: 12px;
     padding-bottom: 3px;
     flex-direction: column;
-    align-items: flex-start;
+    justify-content: center;
 }
 
 .li-datos {
     display: flex;
-    list-style-type: none;
     margin-left: 20px;
     padding-top: 3px;
     padding-bottom: 3px;
-    flex-direction: row;
     align-items: center;
     gap: 5px;
 }
 
 .li-interes {
-    
+
     list-style-type: square;
     margin-left: 20px;
     padding-top: 3px;
